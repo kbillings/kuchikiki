@@ -6,9 +6,6 @@ Kuchikiki (口利き) is an HTML tree manipulation library for Rust.
 
 #![deny(missing_docs)]
 
-#[macro_use]
-pub extern crate html5ever;
-
 mod attributes;
 mod cell_extras;
 pub mod iter;
@@ -21,6 +18,7 @@ mod tests;
 mod tree;
 
 pub use attributes::{Attribute, Attributes, ExpandedName};
+pub use html5ever;
 pub use node_data_ref::NodeDataRef;
 pub use parser::{parse_fragment, parse_html, parse_html_with_options, ParseOpts, Sink};
 pub use select::{Selector, Selectors, Specificity};

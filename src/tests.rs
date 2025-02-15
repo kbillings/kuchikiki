@@ -1,5 +1,4 @@
-use html5ever::tree_builder::QuirksMode;
-use html5ever::QualName;
+use html5ever::{local_name, namespace_url, ns, tree_builder::QuirksMode, QualName};
 use std::path::Path;
 
 use tempfile::TempDir;

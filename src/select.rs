@@ -7,7 +7,7 @@ use crate::iter::{NodeIterator, Select};
 use crate::node_data_ref::NodeDataRef;
 use crate::tree::{ElementData, Node, NodeData, NodeRef};
 use cssparser::{self, CowRcStr, ParseError, SourceLocation, ToCss};
-use html5ever::{LocalName, Namespace};
+use html5ever::{local_name, namespace_url, ns, LocalName, Namespace};
 use precomputed_hash::PrecomputedHash;
 use selectors::attr::{AttrSelectorOperation, CaseSensitivity, NamespaceConstraint};
 use selectors::context::{QuirksMode, SelectorCaches};

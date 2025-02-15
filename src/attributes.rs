@@ -1,4 +1,4 @@
-use html5ever::{LocalName, Namespace, Prefix};
+use html5ever::{namespace_url, ns, LocalName, Namespace, Prefix};
 use indexmap::{map::Entry, IndexMap};
 
 /// Convenience wrapper around a indexmap that adds method for attributes in the null namespace.
